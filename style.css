@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 14%;
+  background-color: #00246B;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 .8rem;
+  float: right;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #eee;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav {
+    font-size: 1.3rem;
+  }
+
+  header nav .time-display {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  header nav a {
+    margin-right: 1rem;
+  }
+
+
+  main {
+    width: 100%;
+    height: auto;
+    /* background-color: #CADCFC; */
+    display: flex;
+  }
+
+  main .image {
+    width: 32%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  main .image div {
+    color: #00246B;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  main .image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  main .my-goals {
+    width: 69%;
+    height: auto;
+    padding: 2rem;
+    display: grid;
+    gap: .6rem;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid red; */
+  }
+
+  main .my-goals .h2 {
+    grid-column: 1 / -1;
+    height: 3rem;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  main .my-goals div {
+    width: 20rem;
+    height: 15rem;
+    background-color: #CADCFC;
+    box-shadow: 0 4px 8px rgba(122, 144, 188, 0.5);
+    border: 1px solid #CADCFC;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    background-color: #00246B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    padding: 1rem 0;
+  }
+
+  .footer .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer .links div {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    margin: 0 0.8rem;
+    padding: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .links div img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav {
+    font-size: 1rem;
+  }
+
+  header nav .time-display {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  main .image div {
+    color: #00246B;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  main .image {
+    width: 28%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  main .image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  main .my-goals {
+    width: 71%;
+    height: auto;
+    padding: 1rem;
+    display: grid;
+    gap: .4rem;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid red; */
+  }
+
+  main .my-goals .h2 {
+    grid-column: 1 / -1;
+    height: 2rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  main .my-goals div {
+    width: 19rem;
+    height: 14rem;
+    background-color: #CADCFC;
+    box-shadow: 0 4px 8px rgba(122, 144, 188, 0.5);
+    border: 1px solid #CADCFC;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    background-color: #00246B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    padding: 1rem 0;
+  }
+
+  .footer .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer .links div {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0 0.6rem;
+    padding: .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .links div img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  header nav {
+    font-size: .8rem;
+  }
+
+  header nav a {
+    float: right;
+    margin: 0 4px;
+  }
+
+  header nav .time-display {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .image div {
+    color: #00246B;
+    font-size: 0.5rem;
+    font-weight: 700;
+  }
+
+  main .image {
+    width: 95%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  main .image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  main .my-goals {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: grid;
+    gap: .3rem;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid red; */
+  }
+
+  main .my-goals .h2 {
+    grid-column: 1 / -1;
+    height: 1.4rem;
+    width: 100%;
+    font-size: .8rem;
+  }
+
+  main .my-goals div {
+    width: 14rem;
+    height: 12rem;
+    background-color: #CADCFC;
+    box-shadow: 0 4px 8px rgba(122, 144, 188, 0.5);
+    border: 1px solid #CADCFC;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    background-color: #00246B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    padding: .5rem 0;
+  }
+
+  .footer .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .footer .links div {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0 0.4rem;
+    padding: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .links div img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

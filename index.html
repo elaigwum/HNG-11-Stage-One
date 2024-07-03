@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HNG Stage One Task</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+
+<body>
+  <header data-testid="header" class="header">
+    <nav class="nav-link" data-testid="nav-link">
+      <a href="#">Home</a>
+      <a href="#">About Me</a>
+      <a href="#">My Projects</a>
+      <div data-testid="time-dsplay" class="time-display">
+        <div data-testid="currentDay" class="day"></div>
+        <div data-testid="currentTimeUTC" class="time"></div>
+      </div>
+    </nav>
+  </header>
+  <main data-testid="main" data-testid="main">
+    <div data-testid="image" class="image">
+      <img src="/asset/my_picture.jpg" alt="my slack profile picture" data-testid="slackProfilePicture"></img>
+      <div>
+        <p>Slack Name: @Omachile</p>
+        <p data-testid="slackEmail">Slack Email: elaigwumichael82@gmail.com</p>
+      </div>
+    </div>
+    <div data-testid="my-goals" class="my-goals">
+      <div class="h2">
+        <h2>My Two Years Goals</h2>
+      </div>
+      <div>Become a Software Engineer</div>
+      <div>Build a personal project and commercialize it</div>
+      <div>Secure a good remote job</div>
+      <div>Understand algorithms and data structures in programming</div>
+      <div>Contribute meaningfuly to open source projects</div>
+      <div>Build a viable product that will create value positively for the society</div>
+
+    </div>
+  </main>
+  <footer data-testid="footer" class="footer">
+    <div data-testid="external-websites" class="links">
+      <div><a href="http://hng.tech/learn" target="_blank" data-testid="hngLink"><img src="/asset/hng.jpg"
+            alt="HNG link"></a></div>
+      <div><a href="http://keyword.dog/" target="_blank" data-testid="keywordLink"><img src="/asset/kword.svg"
+            alt="keyword link"></a></div>
+      <div><a href="http://scrapeanyweb.site/" target="_blank" data-testid="scrapeanywebLink"><img
+            src="/asset//scrape.png" alt="scrape link"></a>
+      </div>
+    </div>
+    <p>&copy; 2024 HNG 11 Internship. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
